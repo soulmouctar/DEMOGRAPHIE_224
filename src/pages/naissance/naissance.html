@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Naissance</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h4 style="text-align:center;">Enregistrement d'un <br> nouveau-né</h4>
+  <ion-list>    
+      <ion-item>
+        <ion-label floating>Nom de l'enfant</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Prénom de l'enfant</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+        <ion-item>
+          <ion-label>Sexe</ion-label>
+          <ion-select [(ngModel)]="sexe">
+            <ion-option value="masc">Masculin</ion-option>
+            <ion-option value="fem">Feminin</ion-option>            
+          </ion-select>
+        </ion-item>
+      <ion-item>
+        <ion-label floating>Prénom du Père</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Age du père</ion-label>
+        <ion-input type="number"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Profession du père</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Nom et Prénom(s) de la maman</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Age de la mère</ion-label>
+        <ion-input type="number"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Profession de la mère</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Quartier</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Commune</ion-label>
+        <ion-select [(ngModel)]="sexe">
+          <ion-option value="Matoto">Matoto</ion-option>
+          <ion-option value="Matam">Matam</ion-option>
+          <ion-option value="Ratoma">Ratoma</ion-option>
+          <ion-option value="Dixinn">Dixinn</ion-option>
+          <ion-option value="Kaloum">Kaloum</ion-option>
+        </ion-select>
+      </ion-item>
+      
+      
+      <div padding>
+        <button ion-button  full color="secondary" block >Soumettre</button>
+      </div>
+  </ion-list>
+    
+    
+</ion-content>
